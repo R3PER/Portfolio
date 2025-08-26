@@ -30,7 +30,7 @@ export const PROJECTS = [
       ]
     },
     images: [
-      getAssetPath("/images/2d-rpg-text-game/1.png"),
+      getAssetPath("/public/images/2d-rpg-text-game/1.png"),
       getAssetPath("/images/2d-rpg-text-game/2.png"),
       getAssetPath("/images/2d-rpg-text-game/3.png"),
       getAssetPath("/images/2d-rpg-text-game/4.png"),
