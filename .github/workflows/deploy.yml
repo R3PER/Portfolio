@@ -37,7 +37,7 @@ jobs:
               unoptimized: true
             },
             basePath: '/Portfolio',
-            assetPrefix: '/Portfolio/',
+            assetPrefix: '',
             eslint: {
               ignoreDuringBuilds: true,
             },
