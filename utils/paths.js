@@ -1,8 +1,14 @@
+// Tymczasowo włączamy tryb debugowania, żeby zobaczyć faktycznie generowane ścieżki
 export const getAssetPath = (path) => {
-  // Usuwamy początkowy slash i 'public/' z ścieżki, jeśli istnieją
-  let cleanPath = path.startsWith('/') ? path.substring(1) : path;
+  const cleanPath = path.startsWith('/') ? path.substring(1) : path;
   
-  // W środowisku produkcyjnym używamy prefiks '/Portfolio'
-  // W środowisku deweloperskim używamy prefiks '/'
-  return process.env.NODE_ENV === 'production' ? `/Portfolio/${cleanPath}` : `/${cleanPath}`;
+  // W wersji produkcyjnej dodajemy '/public/' przed ścieżką, ponieważ obrazy 
+  // znajdują się w folderze public w GitHub Pages
+  if (process.env.NODE_ENV === 'production') {
+    // Upewniamy się, że plik się załaduje z właściwej lokalizacji
+    return `/Portfolio/public/${cleanPath}`;
+  } else {
+    // W środowisku deweloperskim
+    return `/${cleanPath}`;
+  }
 };
