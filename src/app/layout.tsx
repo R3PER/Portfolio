@@ -5,6 +5,7 @@ import "@/styles/globals.css"
 import { Analytics } from "@vercel/analytics/next"
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import type { Metadata } from "next"
+import { getAssetPath } from "../../utils/paths"
 
 import { Exo_2 } from "next/font/google"
 
@@ -54,7 +55,7 @@ export const metadata: Metadata = {
     ],
   },
   icons: {
-    icon: "/favicon.ico",
+    icon: getAssetPath("/favicon.ico"),
   },
 }
 

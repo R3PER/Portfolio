@@ -1,5 +1,7 @@
 import { Metadata } from "next"
 import { ComingSoonPage } from "@/components/layout/coming-soon"
+// Import zostanie przywrócony, jeśli odkomentowane zostaną odniesienia do obrazów
+// import { getAssetPath } from "@/utils/paths"
 
 export const metadata: Metadata = {
   title: "About | Kinh Dev",
@@ -23,7 +25,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     images: [
       // {
-      //   url: "https://kinhdev.id.vn/images/seo/about-og-image.png",
+      //   url: getAssetPath("/images/seo/about-og-image.png"),
       //   width: 1200,
       //   height: 630,
       //   alt: "Kinh Dev About Page",
@@ -35,7 +37,7 @@ export const metadata: Metadata = {
     title: "About | Kinh Dev",
     description:
       "Learn more about Kinh Dev - Frontend Developer and tech enthusiast.",
-    // images: ["https://kinhdev.id.vn/images/seo/about-og-image.png"],
+    // images: [getAssetPath("/images/seo/about-og-image.png")],
   },
   alternates: {
     canonical: "https://kinhdev.id.vn/about",

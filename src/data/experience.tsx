@@ -1,4 +1,5 @@
 import { BlurImage } from "@/components/ui/apple-cards-carousel"
+import { getAssetPath } from "../../utils/paths"
 
 export const EXPERIENCE_TIMELINE = [
   {
@@ -11,28 +12,28 @@ export const EXPERIENCE_TIMELINE = [
         </p>
         <div className="grid grid-cols-2 gap-4">
           <BlurImage
-            src="/images/ilotusland/ilotusland_1.tiff"
+            src={getAssetPath("/images/ilotusland/ilotusland_1.tiff")}
             alt="startup template"
             width={500}
             height={500}
             className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
           />
           <BlurImage
-            src="/images/ilotusland/ilotusland_2.tiff"
+            src={getAssetPath("/images/ilotusland/ilotusland_2.tiff")}
             alt="startup template"
             width={500}
             height={500}
             className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
           />
           <BlurImage
-            src="/images/ilotusland/ilotusland_3.tiff"
+            src={getAssetPath("/images/ilotusland/ilotusland_3.tiff")}
             alt="startup template"
             width={500}
             height={500}
             className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
           />
           <BlurImage
-            src="/images/ilotusland/ilotusland_4.webp"
+            src={getAssetPath("/images/ilotusland/ilotusland_4.webp")}
             alt="startup template"
             width={500}
             height={500}
@@ -52,28 +53,28 @@ export const EXPERIENCE_TIMELINE = [
         </p>
         <div className="grid grid-cols-2 gap-4">
           <BlurImage
-            src="/images/ilotusland/ilotusland_section2_1.JPG"
+            src={getAssetPath("/images/ilotusland/ilotusland_section2_1.JPG")}
             alt="startup template"
             width={500}
             height={500}
             className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
           />
           <BlurImage
-            src="/images/ilotusland/ilotusland_section2_2.JPG"
+            src={getAssetPath("/images/ilotusland/ilotusland_section2_2.JPG")}
             alt="startup template"
             width={500}
             height={500}
             className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
           />
           <BlurImage
-            src="/images/ilotusland/ilotusland_section2_3.PNG"
+            src={getAssetPath("/images/ilotusland/ilotusland_section2_3.PNG")}
             alt="startup template"
             width={500}
             height={500}
             className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
           />
           <BlurImage
-            src="/images/ilotusland/ilotusland_section2_4.JPG"
+            src={getAssetPath("/images/ilotusland/ilotusland_section2_4.JPG")}
             alt="startup template"
             width={500}
             height={500}
@@ -94,7 +95,7 @@ export const EXPERIENCE_TIMELINE = [
 
         <div className="grid grid-cols-1 gap-4">
           <BlurImage
-            src="/images/ilotusland/ilotusland_section_3.webp"
+            src={getAssetPath("/images/ilotusland/ilotusland_section_3.webp")}
             alt="hero template"
             width={500}
             height={1000}
@@ -117,7 +118,7 @@ export const EXPERIENCE_TIMELINE = [
 
         <div className="grid grid-cols-1 gap-4">
           <BlurImage
-            src="/images/digitalfortress/section_1.png"
+            src={getAssetPath("/images/digitalfortress/section_1.png")}
             alt="hero template"
             width={500}
             height={1000}
@@ -153,28 +154,28 @@ export const EXPERIENCE_TIMELINE = [
         
         <div className="grid grid-cols-2 gap-4">
           <BlurImage
-            src="/images/digitalfortress/section_2_1.jpeg"
+            src={getAssetPath("/images/digitalfortress/section_2_1.jpeg")}
             alt="startup template"
             width={500}
             height={500}
             className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
           />
           <BlurImage
-            src="/images/digitalfortress/section_2_2.jpeg"
+            src={getAssetPath("/images/digitalfortress/section_2_2.jpeg")}
             alt="startup template"
             width={500}
             height={500}
             className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
           />
           <BlurImage
-            src="/images/digitalfortress/section_2_3.jpeg"
+            src={getAssetPath("/images/digitalfortress/section_2_3.jpeg")}
             alt="startup template"
             width={500}
             height={500}
             className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
           />
           <BlurImage
-            src="/images/digitalfortress/section_2_4.jpeg"
+            src={getAssetPath("/images/digitalfortress/section_2_4.jpeg")}
             alt="startup template"
             width={500}
             height={500}

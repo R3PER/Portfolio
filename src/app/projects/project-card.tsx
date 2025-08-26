@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from "motion/react"
 import Image from "next/image"
 import { IconX, IconArrowNarrowLeft, IconArrowNarrowRight, IconPlayerPlay } from "@tabler/icons-react"
 import { useLanguage } from "@/components/language-toggle"
+import { getAssetPath } from "../../../utils/paths"
 
 type ProjectCardProps = {
   project: {
@@ -65,7 +66,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
         <div className="flex flex-col h-60 md:h-80 w-full">
           <div className="relative w-full h-full overflow-hidden">
             <Image
-              src={project.src}
+              src={getAssetPath(project.src)}
               alt={project.title}
               width={600}
               height={400}
@@ -139,7 +140,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
               {/* Zdjęcie projektu */}
               <div className="relative w-full h-60 md:h-80 overflow-hidden rounded-xl mb-8">
                 <Image
-                  src={project.src}
+                  src={getAssetPath(project.src)}
                   alt={project.title}
                   fill
                   className="object-cover"
@@ -176,7 +177,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
                                 <IconPlayerPlay className="h-12 w-12 text-white" />
                               </div>
                               <video
-                                src={image}
+                                src={getAssetPath(image)}
                                 className="object-cover w-full h-full"
                                 muted
                                 playsInline
@@ -185,7 +186,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
                             </div>
                           ) : (
                             <Image
-                              src={image}
+                              src={getAssetPath(image)}
                               alt={`${project.title} - zdjęcie ${idx + 1}`}
                               fill
                               className="object-cover"
@@ -325,7 +326,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
             <div className="relative h-[80vh] w-[90vw] max-w-7xl">
               {project.images && selectedImageIndex !== null && isVideo(project.images[selectedImageIndex]) ? (
                 <video
-                  src={project.images[selectedImageIndex]}
+                  src={getAssetPath(project.images[selectedImageIndex])}
                   className="absolute top-0 left-0 w-full h-full object-contain"
                   controls
                   autoPlay
@@ -334,7 +335,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
                 />
               ) : (
                 <Image
-                  src={project.images[selectedImageIndex]}
+                  src={getAssetPath(project.images[selectedImageIndex])}
                   alt={`${project.title} - zdjęcie ${selectedImageIndex + 1}`}
                   fill
                   className="object-contain"

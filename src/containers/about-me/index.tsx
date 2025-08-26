@@ -6,6 +6,8 @@ import { MY_NETWORKS } from "@/data/my-networks"
 import { Code, Layers, UserRound, Zap } from "lucide-react"
 import { useTheme } from "next-themes"
 import { MyResume } from "../my-resume"
+// Import zostanie odkomentowany w momencie odkomentowania bloku kodu z avatarami
+// import { getAssetPath } from "../../utils/paths"
 
 export function MyInformation() {
   return (
@@ -16,7 +18,7 @@ export function MyInformation() {
             <CardContent className="!p-0 h-full">
               <div className="relative flex h-full w-full flex-col items-center justify-center overflow-hidden rounded-lg border bg-background">
                 <Image
-                  src="/images/Subject4.png"
+                  src={getAssetPath("/images/Subject4.png")}
                   alt="avatar"
                   width={1000}
                   height={1000}
@@ -24,7 +26,7 @@ export function MyInformation() {
                 />
 
                 <Image
-                  src="/images/Subject5.png"
+                  src={getAssetPath("/images/Subject5.png")}
                   alt="avatar"
                   width={1000}
                   height={1000}
