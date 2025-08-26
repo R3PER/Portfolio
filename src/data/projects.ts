@@ -30,13 +30,13 @@ export const PROJECTS = [
       ]
     },
     images: [
-      getAssetPath("/Portfolio/public/images/2d-rpg-text-game/1.png"),
-      getAssetPath("/Portfolio/public/images/2d-rpg-text-game/2.png"),
-      getAssetPath("/Portfolio/public/images/2d-rpg-text-game/3.png"),
-      getAssetPath("/Portfolio/public/images/2d-rpg-text-game/4.png"),
-      getAssetPath("/Portfolio/public/images/2d-rpg-text-game/5.png"),
-      getAssetPath("/Portfolio/public/images/2d-rpg-text-game/6.png"),
-      getAssetPath("/Portfolio/public/images/2d-rpg-text-game/7.png")
+      getAssetPath("/images/2d-rpg-text-game/1.png"),
+      getAssetPath("/images/2d-rpg-text-game/2.png"),
+      getAssetPath("/images/2d-rpg-text-game/3.png"),
+      getAssetPath("/images/2d-rpg-text-game/4.png"),
+      getAssetPath("/images/2d-rpg-text-game/5.png"),
+      getAssetPath("/images/2d-rpg-text-game/6.png"),
+      getAssetPath("/images/2d-rpg-text-game/7.png")
     ]
   },
   {
