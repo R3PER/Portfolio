@@ -37,13 +37,16 @@ jobs:
               unoptimized: true
             },
             basePath: '/Portfolio',
-            // W Next.js, gdy ustawiamy basePath, nie potrzebujemy assetPrefix (powoduje to duplikację ścieżek)
-            // assetPrefix: '/Portfolio',
+            // NIE ustawiamy assetPrefix - spowoduje to duplikację ścieżek
             eslint: {
               ignoreDuringBuilds: true,
             },
             typescript: {
               ignoreBuildErrors: true,
+            },
+            // Ważne: upewniamy się, że pliki z folderu public są dostępne pod właściwą ścieżką
+            publicRuntimeConfig: {
+              staticFolder: '/static'
             }
           }
           module.exports = nextConfig
