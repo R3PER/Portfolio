@@ -1,7 +1,8 @@
 export const getAssetPath = (path) => {
-  // W środowisku produkcyjnym dodajemy jawnie '/Portfolio/' przed ścieżką
-  // usuwając najpierw początkowy slash, aby zapobiec podwójnemu slashowi
-  const cleanPath = path.startsWith('/') ? path.substring(1) : path;
-  const basePath = process.env.NODE_ENV === 'production' ? '/Portfolio/' : '/';
-  return basePath + cleanPath;
+  // Usuwamy początkowy slash i 'public/' z ścieżki, jeśli istnieją
+  let cleanPath = path.startsWith('/') ? path.substring(1) : path;
+  
+  // W środowisku produkcyjnym używamy prefiks '/Portfolio'
+  // W środowisku deweloperskim używamy prefiks '/'
+  return process.env.NODE_ENV === 'production' ? `/Portfolio/${cleanPath}` : `/${cleanPath}`;
 };

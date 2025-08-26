@@ -1,5 +1,6 @@
 import { getAssetPath } from "../../utils/paths"
 
+// Poprawka: usuwamy przedrostek '/images/' ze ścieżek, ponieważ jest on już zawarty w funkcji getAssetPath
 export const PROJECTS = [
   {
     category: {
@@ -7,7 +8,7 @@ export const PROJECTS = [
       en: "Text RPG Game"
     },
     title: "Wisielec RPG",
-    src: getAssetPath("/images/2d-rpg-text-game/1.png"),
+    src: getAssetPath("images/2d-rpg-text-game/1.png"),
     techStack: ["Go", "ASCII Art", "Obsługa plików JSON", "Wielojęzyczność"],
     description: {
       pl: "Rozbudowana implementacja klasycznej gry 'Wisielec' działająca w konsoli. To interaktywna gra z elementami RPG, w której gracz musi odgadnąć ukryte słowo, podając litery. Gra posiada kolorowy interfejs, system poziomów i doświadczenia, ekwipunek oraz sklep z przedmiotami.",
@@ -30,13 +31,13 @@ export const PROJECTS = [
       ]
     },
     images: [
-      getAssetPath("/images/2d-rpg-text-game/1.png"),
-      getAssetPath("/images/2d-rpg-text-game/2.png"),
-      getAssetPath("/images/2d-rpg-text-game/3.png"),
-      getAssetPath("/images/2d-rpg-text-game/4.png"),
-      getAssetPath("/images/2d-rpg-text-game/5.png"),
-      getAssetPath("/images/2d-rpg-text-game/6.png"),
-      getAssetPath("/images/2d-rpg-text-game/7.png")
+      getAssetPath("images/2d-rpg-text-game/1.png"),
+      getAssetPath("images/2d-rpg-text-game/2.png"),
+      getAssetPath("images/2d-rpg-text-game/3.png"),
+      getAssetPath("images/2d-rpg-text-game/4.png"),
+      getAssetPath("images/2d-rpg-text-game/5.png"),
+      getAssetPath("images/2d-rpg-text-game/6.png"),
+      getAssetPath("images/2d-rpg-text-game/7.png")
     ]
   },
   {
@@ -45,7 +46,7 @@ export const PROJECTS = [
       en: "Warehouse Management System"
     },
     title: "Storage-App",
-    src: getAssetPath("/images/storage-app/1.png"),
+    src: getAssetPath("images/storage-app/1.png"),
     techStack: ["Next.js", "React", "TypeScript", "Tailwind CSS", "MongoDB", "Mongoose", "NextAuth.js", "React Icons"],
     description: {
       pl: "Aplikacja internetowa do zarządzania magazynem, umożliwiająca śledzenie produktów, tworzenie notatek oraz zarządzanie użytkownikami. System zapewnia kompleksowe rozwiązanie do kontroli stanów magazynowych z intuicyjnym interfejsem użytkownika.",
@@ -68,21 +69,21 @@ export const PROJECTS = [
       ]
     },
     images: [
-      getAssetPath("/images/storage-app/1.png"),
-      getAssetPath("/images/storage-app/2.png"),
-      getAssetPath("/images/storage-app/3.png"),
-      getAssetPath("/images/storage-app/4.png"),
-      getAssetPath("/images/storage-app/5.png"),
-      getAssetPath("/images/storage-app/6.png"),
-      getAssetPath("/images/storage-app/7.png"),
-      getAssetPath("/images/storage-app/8.png"),
-      getAssetPath("/images/storage-app/9.png"),
-      getAssetPath("/images/storage-app/10.png"),
-      getAssetPath("/images/storage-app/11.png"),
-      getAssetPath("/images/storage-app/12.png"),
-      getAssetPath("/images/storage-app/13.png"),
-      getAssetPath("/images/storage-app/14.png"),
-      getAssetPath("/images/storage-app/15.png")
+      getAssetPath("images/storage-app/1.png"),
+      getAssetPath("images/storage-app/2.png"),
+      getAssetPath("images/storage-app/3.png"),
+      getAssetPath("images/storage-app/4.png"),
+      getAssetPath("images/storage-app/5.png"),
+      getAssetPath("images/storage-app/6.png"),
+      getAssetPath("images/storage-app/7.png"),
+      getAssetPath("images/storage-app/8.png"),
+      getAssetPath("images/storage-app/9.png"),
+      getAssetPath("images/storage-app/10.png"),
+      getAssetPath("images/storage-app/11.png"),
+      getAssetPath("images/storage-app/12.png"),
+      getAssetPath("images/storage-app/13.png"),
+      getAssetPath("images/storage-app/14.png"),
+      getAssetPath("images/storage-app/15.png")
     ]
   },
   {
@@ -91,7 +92,7 @@ export const PROJECTS = [
       en: "NoSQL Database"
     },
     title: "EngineNoSQL",
-    src: getAssetPath("/images/enginenosql/1.png"),
+    src: getAssetPath("images/enginenosql/1.png"),
     techStack: ["Golang", "Wails", "React", "TypeScript", "Ant Design", "Vite"],
     description: {
       pl: "Profesjonalna aplikacja do zarządzania bazami danych NoSQL, która umożliwia tworzenie, zarządzanie i manipulowanie danymi bez konieczności definiowania schematu. Aplikacja łączy prostotę i wydajność, dostarczając kompletne rozwiązanie do pracy z danymi w formacie dokumentowym.",
@@ -114,17 +115,17 @@ export const PROJECTS = [
       ]
     },
     images: [
-      getAssetPath("/images/enginenosql/1.png"),
-      getAssetPath("/images/enginenosql/2.png"),
-      getAssetPath("/images/enginenosql/3.png"),
-      getAssetPath("/images/enginenosql/4.png"),
-      getAssetPath("/images/enginenosql/5.png"),
-      getAssetPath("/images/enginenosql/6.png"),
-      getAssetPath("/images/enginenosql/7.png"),
-      getAssetPath("/images/enginenosql/8.png"),
-      getAssetPath("/images/enginenosql/9.png"),
-      getAssetPath("/images/enginenosql/10.png"),
-      getAssetPath("/images/enginenosql/11.mp4")
+      getAssetPath("images/enginenosql/1.png"),
+      getAssetPath("images/enginenosql/2.png"),
+      getAssetPath("images/enginenosql/3.png"),
+      getAssetPath("images/enginenosql/4.png"),
+      getAssetPath("images/enginenosql/5.png"),
+      getAssetPath("images/enginenosql/6.png"),
+      getAssetPath("images/enginenosql/7.png"),
+      getAssetPath("images/enginenosql/8.png"),
+      getAssetPath("images/enginenosql/9.png"),
+      getAssetPath("images/enginenosql/10.png"),
+      getAssetPath("images/enginenosql/11.mp4")
     ]
   },
   {
@@ -133,7 +134,7 @@ export const PROJECTS = [
       en: "Weather App"
     },
     title: "WeatherApp",
-    src: getAssetPath("/images/weatherapp/1.png"),
+    src: getAssetPath("images/weatherapp/1.png"),
     techStack: ["Go", "Wails", "React", "TypeScript", "Framer Motion", "OpenWeather API"],
     description: {
       pl: "Nowoczesna aplikacja pogodowa umożliwiająca użytkownikom sprawdzanie aktualnej pogody oraz prognoz dla dowolnego miasta na świecie. Aplikacja prezentuje dane w eleganckim, responsywnym interfejsie z dynamicznymi animacjami i intuicyjną nawigacją.",
@@ -156,8 +157,8 @@ export const PROJECTS = [
       ]
     },
     images: [
-      getAssetPath("/images/weatherapp/1.png"),
-      getAssetPath("/images/weatherapp/2.mp4")
+      getAssetPath("images/weatherapp/1.png"),
+      getAssetPath("images/weatherapp/2.mp4")
     ]
   },
   {
@@ -166,7 +167,7 @@ export const PROJECTS = [
       en: "Password Manager"
     },
     title: "NexoPass",
-    src: getAssetPath("/images/nexopass/1.png"),
+    src: getAssetPath("images/nexopass/1.png"),
     techStack: ["Go", "React", "TypeScript", "Tailwind CSS", "Wails", "MongoDB", "AES-256-GCM"],
     description: {
       pl: "Zaawansowana aplikacja do bezpiecznego zarządzania danymi osobistymi, hasłami i plikami. Zapewnia kompleksowe rozwiązanie do przechowywania poufnych informacji z silnym szyfrowaniem, które działa zarówno w trybie online jak i offline.",
@@ -189,18 +190,18 @@ export const PROJECTS = [
       ]
     },
     images: [
-      getAssetPath("/images/nexopass/1.png"),
-      getAssetPath("/images/nexopass/2.png"),
-      getAssetPath("/images/nexopass/3.png"),
-      getAssetPath("/images/nexopass/4.png"),
-      getAssetPath("/images/nexopass/5.png"),
-      getAssetPath("/images/nexopass/6.png"),
-      getAssetPath("/images/nexopass/7.png"),
-      getAssetPath("/images/nexopass/8.png"),
-      getAssetPath("/images/nexopass/9.png"),
-      getAssetPath("/images/nexopass/10.png"),
-      getAssetPath("/images/nexopass/11.png"),
-      getAssetPath("/images/nexopass/12.png")
+      getAssetPath("images/nexopass/1.png"),
+      getAssetPath("images/nexopass/2.png"),
+      getAssetPath("images/nexopass/3.png"),
+      getAssetPath("images/nexopass/4.png"),
+      getAssetPath("images/nexopass/5.png"),
+      getAssetPath("images/nexopass/6.png"),
+      getAssetPath("images/nexopass/7.png"),
+      getAssetPath("images/nexopass/8.png"),
+      getAssetPath("images/nexopass/9.png"),
+      getAssetPath("images/nexopass/10.png"),
+      getAssetPath("images/nexopass/11.png"),
+      getAssetPath("images/nexopass/12.png")
     ]
   },
   {
@@ -209,7 +210,7 @@ export const PROJECTS = [
       en: "Payment Wallet"
     },
     title: "Pocket Wallet",
-    src: getAssetPath("/images/pocket-wallet/1.png"),
+    src: getAssetPath("images/pocket-wallet/1.png"),
     techStack: ["Go", "React", "TypeScript", "Material-UI", "Wails", "Couchbase", "Stripe", "AES-256-GCM"],
     description: {
       pl: "Kompletna aplikacja portfela płatniczego zbudowana z wykorzystaniem nowoczesnych technologii i najwyższych standardów bezpieczeństwa. Oferuje end-to-end szyfrowanie danych użytkownika oraz integrację z systemami płatności.",
@@ -230,10 +231,10 @@ export const PROJECTS = [
       ]
     },
     images: [
-      getAssetPath("/images/pocket-wallet/1.png"),
-      getAssetPath("/images/pocket-wallet/2.png"),
-      getAssetPath("/images/pocket-wallet/3.png"),
-      getAssetPath("/images/pocket-wallet/4.mp4")
+      getAssetPath("images/pocket-wallet/1.png"),
+      getAssetPath("images/pocket-wallet/2.png"),
+      getAssetPath("images/pocket-wallet/3.png"),
+      getAssetPath("images/pocket-wallet/4.mp4")
     ]
   },
   {
@@ -242,7 +243,7 @@ export const PROJECTS = [
       en: "P2P Messenger"
     },
     title: "ExecP2P",
-    src: getAssetPath("/images/execp2p/1.png"),
+    src: getAssetPath("images/execp2p/1.png"),
     techStack: ["Go", "React", "TypeScript", "Tailwind CSS", "Wails", "QUIC", "CRYSTALS-Kyber-1024"],
     description: {
       pl: "Nowoczesny komunikator peer-to-peer wykorzystujący zaawansowane technologie do zapewnienia bezpiecznej komunikacji. Aplikacja implementuje post-kwantowe algorytmy kryptograficzne i zdecentralizowaną sieć do odkrywania peerów.",
@@ -265,13 +266,13 @@ export const PROJECTS = [
       ]
     },
     images: [
-      getAssetPath("/images/execp2p/1.png"),
-      getAssetPath("/images/execp2p/2.png"),
-      getAssetPath("/images/execp2p/3.png"),
-      getAssetPath("/images/execp2p/4.png"),
-      getAssetPath("/images/execp2p/5.png"),
-      getAssetPath("/images/execp2p/6.png"),
-      getAssetPath("/images/execp2p/7.png")
+      getAssetPath("images/execp2p/1.png"),
+      getAssetPath("images/execp2p/2.png"),
+      getAssetPath("images/execp2p/3.png"),
+      getAssetPath("images/execp2p/4.png"),
+      getAssetPath("images/execp2p/5.png"),
+      getAssetPath("images/execp2p/6.png"),
+      getAssetPath("images/execp2p/7.png")
     ]
   },
   {
@@ -280,7 +281,7 @@ export const PROJECTS = [
       en: "Encryption Software"
     },
     title: "Win Encrypt",
-    src: getAssetPath("/images/win-encrypt/winencrypt.png"),
+    src: getAssetPath("images/win-encrypt/winencrypt.png"),
     techStack: ["Go", "AES", "GUI", "Szyfrowanie plików"],
     description: {
       pl: "Program do szyfrowania i deszyfrowania plików z interfejsem graficznym, napisany w języku Go. Aplikacja wykorzystuje zaawansowane algorytmy kryptograficzne (AES) do zabezpieczenia danych użytkownika, oferując szybkie szyfrowanie z intuicyjnym interfejsem.",
@@ -303,7 +304,7 @@ export const PROJECTS = [
       ]
     },
     images: [
-      getAssetPath("/images/win-encrypt/winencrypt.png")
+      getAssetPath("images/win-encrypt/winencrypt.png")
     ]
   },
   {
@@ -312,7 +313,7 @@ export const PROJECTS = [
       en: "Task Management Application"
     },
     title: "Todo List",
-    src: getAssetPath("/images/todo-list/1.gif"),
+    src: getAssetPath("images/todo-list/1.gif"),
     techStack: ["React", "Material-UI", "Emotion", "React Beautiful DnD", "Date-fns", "Recharts", "JavaScript"],
     description: {
       pl: "Rozbudowana aplikacja do zarządzania zadaniami stworzona w React. Aplikacja umożliwia tworzenie, organizowanie i śledzenie zadań w wydajny sposób, z intuicyjnym interfejsem i zaawansowanymi funkcjami sortowania i kategoryzacji.",
@@ -335,8 +336,8 @@ export const PROJECTS = [
       ]
     },
     images: [
-      getAssetPath("/images/todo-list/1.gif"),
-      getAssetPath("/images/todo-list/2.gif")
+      getAssetPath("images/todo-list/1.gif"),
+      getAssetPath("images/todo-list/2.gif")
     ]
   },
   {
@@ -345,7 +346,7 @@ export const PROJECTS = [
       en: "Calculator Application"
     },
     title: "Calculator",
-    src: getAssetPath("/images/calculator/1.gif"),
+    src: getAssetPath("images/calculator/1.gif"),
     techStack: ["C#"],
     description: {
       pl: "Prosta, ale funkcjonalna aplikacja kalkulatora. Kalkulator obsługuje podstawowe operacje arytmetyczne, takie jak dodawanie, odejmowanie, mnożenie i dzielenie. Został zaprojektowany z myślą o prostocie obsługi i intuicyjnym interfejsie użytkownika.",
@@ -368,10 +369,10 @@ export const PROJECTS = [
       ]
     },
     images: [
-      getAssetPath("/images/calculator/1.gif"),
-      getAssetPath("/images/calculator/2.png"),
-      getAssetPath("/images/calculator/3.png"),
-      getAssetPath("/images/calculator/4.png")
+      getAssetPath("images/calculator/1.gif"),
+      getAssetPath("images/calculator/2.png"),
+      getAssetPath("images/calculator/3.png"),
+      getAssetPath("images/calculator/4.png")
     ]
   }
 ]

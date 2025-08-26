@@ -55,7 +55,7 @@ export const metadata: Metadata = {
     ],
   },
   icons: {
-    icon: getAssetPath("/favicon.ico"),
+    icon: getAssetPath("favicon.ico"),
   },
 }
 
