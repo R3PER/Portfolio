@@ -3,7 +3,7 @@
 import React from 'react'
 import { BentoGrid, BentoGridItem } from "@/components/ui/bento-grid"
 import { cn } from "@/lib/utils"
-import { Blocks, Rss, Shield, Lock, Code, Server, Paintbrush, Smile } from "lucide-react"
+import { Blocks, Rss, Shield, Lock, Paintbrush, Smile } from "lucide-react"
 import { motion } from "motion/react"
 import { useEffect, useState } from "react"
 import { useLanguage } from "@/components/language-toggle"
@@ -11,7 +11,6 @@ import { StackCloud } from "./stack-cloud"
 
 export function PersonalInterests() {
   const [mounted, setMounted] = useState(false)
-  const { t, language } = useLanguage()
   useEffect(() => {
     setMounted(true)
   }, [])
@@ -22,8 +21,7 @@ export function PersonalInterests() {
     )
   }
 
-  // @ts-expect-error - Type compatibility is ensured by our implementation
-  const items = getItems(t, language)
+  const items = getItems()
   
   return (
     <>
@@ -186,7 +184,7 @@ const WebDevelopmentComponent = () => {
   )
 }
 
-function getItems(t: (key: string) => string, language: string) {
+function getItems() {
   return [
     {
       title: "",
