@@ -29,10 +29,11 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
 
     // Set up resize observer to handle window resizing
     const resizeObserver = new ResizeObserver(updateHeight)
-    resizeObserver.observe(ref.current)
+    const currentRef = ref.current // Zapisz referencję do zmiennej w domknięciu
+    resizeObserver.observe(currentRef)
 
     return () => {
-      if (ref.current) resizeObserver.unobserve(ref.current)
+      resizeObserver.unobserve(currentRef)
     }
   }, [])
 

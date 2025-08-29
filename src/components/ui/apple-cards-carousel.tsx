@@ -1,6 +1,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 "use client"
 import React, {
+  useCallback,
   useEffect,
   useRef,
   useState,
@@ -48,7 +49,7 @@ export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
   const [canScrollLeft, setCanScrollLeft] = React.useState(false)
   const [canScrollRight, setCanScrollRight] = React.useState(true)
   const [currentIndex, setCurrentIndex] = useState(0)
-  const [itemsCount, setItemsCount] = useState(items.length)
+  const itemsCount = items.length
 
   useEffect(() => {
     if (carouselRef.current) {
@@ -233,6 +234,15 @@ export const Card = ({
   const containerRef = useRef<HTMLDivElement>(null)
   const { onCardClose } = useContext(CarouselContext)
 
+  const handleOpen = () => {
+    setOpen(true)
+  }
+
+  const handleClose = useCallback(() => {
+    setOpen(false)
+    onCardClose(index)
+  }, [setOpen, onCardClose, index])
+
   useEffect(() => {
     function onKeyDown(event: KeyboardEvent) {
       if (event.key === "Escape") {
@@ -248,18 +258,9 @@ export const Card = ({
 
     window.addEventListener("keydown", onKeyDown)
     return () => window.removeEventListener("keydown", onKeyDown)
-  }, [open])
+  }, [open, handleClose])
 
-  useOutsideClick(containerRef as any, () => handleClose())
-
-  const handleOpen = () => {
-    setOpen(true)
-  }
-
-  const handleClose = () => {
-    setOpen(false)
-    onCardClose(index)
-  }
+  useOutsideClick(containerRef as any, handleClose)
 
   const openGalleryImage = (imageIndex: number) => {
     setSelectedImageIndex(imageIndex)
