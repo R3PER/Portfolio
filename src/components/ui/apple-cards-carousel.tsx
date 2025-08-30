@@ -18,6 +18,7 @@ import { cn } from "@/lib/utils"
 import { AnimatePresence, motion } from "motion/react"
 import Image, { ImageProps } from "next/image"
 import { useOutsideClick } from "@/hooks/use-outside-click"
+import { useLanguage } from "@/components/language-toggle"
 
 interface CarouselProps {
   items: JSX.Element[]
@@ -27,11 +28,11 @@ interface CarouselProps {
 type Card = {
   src: string
   title: string
-  category: string
+  category: string | { pl: string; en: string }
   content?: React.ReactNode
   techStack?: string[]
-  description?: string
-  features?: string[]
+  description?: string | { pl: string; en: string }
+  features?: string[] | { pl: string[]; en: string[] }
   repoLink?: string
   images?: string[]  // Tablica z URL-ami dodatkowych zdjęć
 }
@@ -233,6 +234,15 @@ export const Card = ({
   const [selectedImageIndex, setSelectedImageIndex] = useState<number | null>(null)
   const containerRef = useRef<HTMLDivElement>(null)
   const { onCardClose } = useContext(CarouselContext)
+  const { language } = useLanguage()
+  
+  // Helper do pobierania wartości w zależności od języka
+  const getLocalizedValue = <T,>(value: T | { pl: T; en: T }): T => {
+    if (value && typeof value === 'object' && 'pl' in value && 'en' in value) {
+      return value[language as keyof typeof value] as T
+    }
+    return value as T
+  }
 
   const handleOpen = () => {
     setOpen(true)
@@ -304,7 +314,7 @@ export const Card = ({
                   layoutId={layout ? `category-${card.title}` : undefined}
                   className="text-base font-medium text-blue-600 dark:text-blue-400"
                 >
-                  {card.category}
+                  {getLocalizedValue(card.category)}
                 </motion.p>
                 <motion.h2
                   layoutId={layout ? `title-${card.title}` : undefined}
@@ -329,7 +339,7 @@ export const Card = ({
                 <div>
                   <h3 className="text-xl md:text-2xl font-semibold mb-3 dark:text-white">Opis projektu</h3>
                   <p className="text-neutral-700 dark:text-neutral-300">
-                    {card.description}
+                    {getLocalizedValue(card.description)}
                   </p>
                 </div>
 
@@ -361,11 +371,14 @@ export const Card = ({
                 </div>
                 
                 {/* Funkcje projektu */}
-                {card.features && card.features.length > 0 && (
+                {card.features && (
                   <div>
                     <h3 className="text-xl md:text-2xl font-semibold mb-3 dark:text-white">Główne funkcje</h3>
                     <ul className="grid grid-cols-1 md:grid-cols-2 gap-3">
-                      {card.features.map((feature, i) => (
+                      {(typeof card.features === 'object' && !Array.isArray(card.features) 
+                        ? card.features[language as keyof typeof card.features] as string[]
+                        : card.features as string[]
+                      ).map((feature: string, i: number) => (
                         <li key={i} className="flex items-start">
                           <div className="flex-shrink-0 h-5 w-5 rounded-full bg-blue-100 dark:bg-blue-900 flex items-center justify-center mr-3 mt-1">
                             <svg className="h-3 w-3 text-blue-600 dark:text-blue-400" fill="currentColor" viewBox="0 0 20 20">
@@ -522,10 +535,10 @@ export const Card = ({
         <div className="absolute h-full top-0 inset-x-0 bg-gradient-to-b from-black/50 via-transparent to-transparent z-30 pointer-events-none" />
         <div className="relative z-40 p-3 md:p-8">
           <motion.p
-            layoutId={layout ? `category-${card.category}` : undefined}
+            layoutId={layout ? `category-${card.title}` : undefined}
             className="text-white text-base md:text-xl font-semibold  text-left"
           >
-            {card.category}
+            {getLocalizedValue(card.category)}
           </motion.p>
           <motion.p
             layoutId={layout ? `title-${card.title}` : undefined}
