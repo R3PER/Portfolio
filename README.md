@@ -101,7 +101,7 @@ Before you begin, ensure you have the following installed:
 
 **[Aleksander Kapczuk]**
 - Github : https://github.com/R3PER
-- Email: aleksanderkapczuk@wp.pl
+- Email: aleksanderkapczuk@gmail.com
 
 ## 🙏 Acknowledgments
 
