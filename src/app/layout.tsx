@@ -16,14 +16,15 @@ const exo2 = Exo_2({
 })
 
 export const metadata: Metadata = {
-  title: "R3PER | Portfolio based on kinhdev24 template",
+  metadataBase: new URL("https://portfolio-six-snowy-38.vercel.app"),
+  title: "Aleksander | Front-End Developer",
   description:
-    "Portfolio built with Next.js, originally created by Kinh Bach (kinhdev24) and customized by R3PER. Showcasing projects, skills and experience in web development.",
+    "Front-End Developer tworzący nowoczesne aplikacje w React i Next.js. Sprawdź moje projekty, doświadczenie i kontakt.",
   keywords: [
+    "Front-End Developer",
     "Frontend Developer",
     "Next.js Developer",
     "React Developer",
-    "Kinh Bach Portfolio",
     "Web Development",
     "UI/UX Design",
     "JavaScript",

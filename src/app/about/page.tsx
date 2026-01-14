@@ -4,23 +4,23 @@ import { ComingSoonPage } from "@/components/layout/coming-soon"
 // import { getAssetPath } from "@/utils/paths"
 
 export const metadata: Metadata = {
-  title: "About | Kinh Dev",
+  title: "O mnie | Aleksander",
   description:
-    "Learn more about Kinh Dev - Frontend Developer, JavaScript enthusiast, and tech explorer.",
+    "Poznaj mnie lepiej — informacje o mnie, technologiach i podejściu do tworzenia aplikacji.",
   keywords: [
-    "Kinh Dev",
-    "About Kinh",
-    "Frontend Developer",
-    "JavaScript",
+    "Aleksander",
+    "O mnie",
+    "Front-End Developer",
+    "React",
     "Next.js",
-    "Vietnam Developer",
+    "TypeScript",
   ],
   openGraph: {
-    title: "About | Kinh Dev",
+    title: "O mnie | Aleksander",
     description:
-      "Discover the story and journey of Kinh Dev in the world of web development.",
-    url: "https://kinhdev.id.vn/about",
-    siteName: "Kinh Dev",
+      "Poznaj mnie lepiej — informacje o mnie, technologiach i podejściu do tworzenia aplikacji.",
+    url: "https://portfolio-six-snowy-38.vercel.app/about",
+    siteName: "Aleksander — Portfolio",
     type: "website",
     locale: "en_US",
     images: [
@@ -28,19 +28,19 @@ export const metadata: Metadata = {
       //   url: getAssetPath("/images/seo/about-og-image.png"),
       //   width: 1200,
       //   height: 630,
-      //   alt: "Kinh Dev About Page",
+      //   alt: "About page",
       // },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "About | Kinh Dev",
+    title: "O mnie | Aleksander",
     description:
-      "Learn more about Kinh Dev - Frontend Developer and tech enthusiast.",
+      "Poznaj mnie lepiej — informacje o mnie, technologiach i podejściu do tworzenia aplikacji.",
     // images: [getAssetPath("/images/seo/about-og-image.png")],
   },
   alternates: {
-    canonical: "https://kinhdev.id.vn/about",
+    canonical: "https://portfolio-six-snowy-38.vercel.app/about",
   },
 }
 

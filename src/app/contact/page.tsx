@@ -8,8 +8,8 @@ export const metadata = {
     title: "Kontakt | Portfolio",
     description:
       "Skontaktuj się ze mną w sprawie współpracy, projektów lub zapytań dotyczących mojego portfolio.",
-    url: "https://portfolio.example.pl/contact",
-    siteName: "Portfolio",
+    url: "https://portfolio-six-snowy-38.vercel.app/contact",
+    siteName: "Aleksander — Portfolio",
   },
   twitter: {
     card: "summary_large_image",
@@ -18,7 +18,7 @@ export const metadata = {
       "Skontaktuj się ze mną w sprawie współpracy, projektów lub zapytań dotyczących mojego portfolio.",
   },
   alternates: {
-    canonical: "https://portfolio.example.pl/contact",
+    canonical: "https://portfolio-six-snowy-38.vercel.app/contact",
   },
 }
 

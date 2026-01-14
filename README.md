@@ -4,7 +4,7 @@ A modern, responsive developer portfolio showcasing skills, projects, and profes
 
 ## 🔄 Modifications
 
-This portfolio template was originally created by [Bach Duong Kinh (kinhdev24)](https://github.com/kinhdev24) and has been modified and customized by R3PER for personal use.
+Portfolio stworzony i dostosowany przez R3PER.
 
 ### Technologies & Features Added by R3PER
 
@@ -90,17 +90,9 @@ Before you begin, ensure you have the following installed:
 
 ## 👨‍💻 Author
 
-**[Bach Duong Kinh]**
+**Aleksander Kapczuk**
 
-- GitHub: [@kinhdev24](https://github.com/kinhdev24)
-- LinkedIn: [@kinhdev24](https://www.linkedin.com/in/kinhdev24)
-- Email: [kinhdev24@gmail.com](mailto:kinhdev24@gmail.com)
-- Website: [kinhdev.id.vn](https://kinhdev.id.vn)
-
- R3PER modified the rest of the files
-
-**[Aleksander Kapczuk]**
-- Github : https://github.com/R3PER
+- GitHub: https://github.com/R3PER
 - Email: aleksanderkapczuk@gmail.com
 
 ## 🙏 Acknowledgments
@@ -114,5 +106,3 @@ Before you begin, ensure you have the following installed:
 - [shadcn/ui](https://ui.shadcn.com/) - UI components
 - [MagicUI](https://magicui.design/) - Animation presets
 - [AceternityUI](https://ui.aceternity.com/) - Animated UI components
-
-

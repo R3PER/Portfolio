@@ -10,26 +10,26 @@ export const MY_NETWORKS = [
   {
     name: "Github",
     icon: IconBrandGithub,
-    href: "https://github.com/kinhdev24/kinhdev24-portfolio",
+    href: "https://github.com/R3PER",
   },
   {
     name: "Linkedin",
     icon: IconBrandLinkedin,
-    href: "https://www.linkedin.com/in/kinhdev24/",
+    href: "https://www.linkedin.com/",
   },
   {
     name: "Email",
     icon: IconMail,
-    href: "mailto:kinhdev24@gmail.com",
+    href: "mailto:aleksanderkapczuk@gmail.com",
   },
   {
     name: "Facebook",
     icon: IconBrandFacebook,
-    href: "https://www.facebook.com/kinhdev24/",
+    href: "https://www.facebook.com/",
   },
   {
     name: "Instagram",
     icon: IconBrandInstagram,
-    href: "https://www.instagram.com/kinhdev24/",
+    href: "https://www.instagram.com/",
   },
 ]
